@@ -25,7 +25,7 @@ public class PizzaOrden {
 	}
 	
 	public void setOpcionVeg(String opcion_veg) {
-		if (opcion_veg.equals("Y") || opcion_veg.equals("y")) {
+		if (opcion_veg.equals("Y")) {
 			this.opcionVeg = true;
 		} 
 		else {
@@ -101,15 +101,15 @@ public class PizzaOrden {
 		String ingredientes = "";
 		if (getIngrediente1() != "Opcion_Invalida") {
 			
-			ingredientes += getIngrediente1() + ",";
-			//System.out.println("el primer "+ ingredientes);
+			ingredientes = getIngrediente1() + ",";
+			
 		}
 		if (getIngrediente2() != "Opcion_Invalida"){ 
-			ingredientes += getIngrediente2() + ","; 
-			//System.out.println("el primer "+ ingredientes);
+			ingredientes = getIngrediente2() + ","; 
+			
 		}
 		if (getIngrediente3() != "Opcion_Invalida"){
-		ingredientes += 	getIngrediente3() + ","; 
+		ingredientes = 	getIngrediente3() + ","; 
 		}
 	System.out.println(ingredientes.substring(0,ingredientes.length()-1));
 	}
