@@ -3,10 +3,10 @@ class Aplicacion():
 
 	def main(self):
 		# Imprimir en pantalla mensaje.
-		print ("Hola Bedu! Esto Es Codigo en la Rama Principal")
+		print ("Hola Yorch! Esto Es Codigo en la Rama Principal")
 		#llamando a funcion principal.
-		inicioMuestra=Muestra()
-		inicioMuestra.main()
+		inicioDev1=Muestra()
+		inicioDev1.main()
 
 inicio=Aplicacion()	
 inicio.main()
